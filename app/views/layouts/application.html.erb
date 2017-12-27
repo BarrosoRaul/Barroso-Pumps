@@ -53,11 +53,13 @@
     			</div>
     			<div role="navigation" class="nav navbar-nav">
     				<ul class="links">
-    					<%= link_to about_url, class: "nav-link" do %>
+    					<%= link_to about_us_url, class: "nav-link" do %>
     					    <div class="box"><li><strong>ABOUT US</strong></li></div>
     					<% end %>
     					<div class="dropdown">
-    						<a class="nav-link" href="http://www.barrosopumps.com/buy.html"><div class="box"><li><strong>BUY</strong></li></div></a>
+    					    <%= link_to buy_url, class: "nav-link" do %>
+    						    <div class="box"><li><strong>BUY</strong></li></div>
+    						<% end %>
     						<div class="submenu" id="sub-buy">
     							<div class="ex-dropdown">
     								<a href="http://www.barrosopumps.com/buy/cornell.html">Cornell</a>
@@ -176,7 +178,9 @@
     						</div>
     					</div>
     					<div class="dropdown">
-    						<a class="nav-link" href="http://www.barrosopumps.com/rent.html"><div class="box"><li><strong>RENT</strong></li></div></a>
+    					    <%= link_to rent_url, class: "nav-link" do %>
+    						    <div class="box"><li><strong>RENT</strong></li></div>
+    						<% end %>
     						<div class="submenu" id="sub-rent">
     							<h3>PUMPS</h3>
     							<a href="http://www.barrosopumps.com/rent/diesel-engine-trash-pumps.html">Diesel Engine Trash Pumps</a>
@@ -198,7 +202,9 @@
     						</div>
     					</div>
     					<div class="dropdown">
-    						<a class="nav-link" href="http://www.barrosopumps.com/markets.html"><div class="box"><li><strong>MARKETS</strong></li></div></a>
+    					    <%= link_to markets_url, class: "nav-link" do %>
+    						    <div class="box"><li><strong>MARKETS</strong></li></div>
+    						<% end %>
     						<div class="submenu" id="sub-markets">
     							<div class="ex-dropdown">
     								<a href="http://www.barrosopumps.com/markets/agriculture.html">Agriculture</a>
@@ -270,17 +276,19 @@
     							</div>
     						</div>
     					</div>
-    					<a class="nav-link" href="http://www.barrosopumps.com/contact-us.html"><div class="box"><li><strong>CONTACT US</strong></li></div></a>
+    					<%= link_to contact_us_url, class: "nav-link" do %>
+    					    <div class="box"><li><strong>CONTACT US</strong></li></div>
+    					<% end %>
     				</ul>
     			</div>
     		</div>
     		<div id="brg-nav" class="collapse">
     			<ul class="brg-list">
-    				<a href="http://www.barrosopumps.com/about-us.html"><li>ABOUT US</li></a>
-    				<a href="http://www.barrosopumps.com/buy.html"><li>BUY</li></a>
-    				<a href="http://www.barrosopumps.com/rent.html"><li>RENT</li></a>
-    				<a href="http://www.barrosopumps.com/markets.html"><li>MARKETS</li></a>
-    				<a href="http://www.barrosopumps.com/contact-us.html"><li>CONTACT US</li></a>
+    				<%= link_to about_us_url, class: "nav-link" do %><li>ABOUT US</li><% end %>
+    				<%= link_to buy_url, class: "nav-link" do %><li>BUY</li><% end %>
+    				<%= link_to rent_url, class: "nav-link" do %><li>RENT</li><% end %>
+    				<%= link_to markets_url, class: "nav-link" do %><li>MARKETS</li><% end %>
+    				<%= link_to contact_us_url, class: "nav-link" do %><li>CONTACT US</li><% end %>
     				<a href="mailto:enrique@barrosopumps.com"><li>REQUEST A QUOTE</li></a>
     				<a href="http://www.barrosopumps.com/es.html"><li>ESPA&Ntilde;OL</li></a>
     			</ul>
