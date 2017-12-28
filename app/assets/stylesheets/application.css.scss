@@ -120,7 +120,7 @@ div.nav {
 }
 
 .main {
-  background-image: url(../images/main.jpg);
+  background-image: url(main.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -884,11 +884,22 @@ footer a:hover, footer a:focus {
     display: flex;
   }
 
-  div.nav ul a div {
+  div.nav ul a {
+    div {
     color: #58595B;
     font-size: 14px;
     padding-bottom: 5px;
     border-bottom: 7px solid transparent;
+    }
+    a:focus div, a:hover div {
+      text-decoration: none;
+      color: white;
+      border-bottom: 7px solid #C32026;
+      background-color: #b3b3b3;
+    }
+    a:active div {
+      background-color: #707070;
+    }
   }
 
   div.nav.es-nav ul a div {
@@ -900,24 +911,6 @@ footer a:hover, footer a:focus {
 
   div.nav ul a .active, div.nav.es-nav ul a .active {
     border-bottom: 7px solid #C32026;
-  }
-
-  div.nav ul a:focus div {
-    text-decoration: none;
-    color: white;
-    border-bottom: 7px solid #C32026;
-    background-color: #b3b3b3;
-  }
-
-  div.nav ul a:hover div {
-    text-decoration: none;
-    color: white;
-    border-bottom: 7px solid #C32026;
-    background-color: #b3b3b3;
-  }
-
-  div.nav ul a:active div {
-    background-color: #707070;
   }
 
   .dropdown:hover .submenu {
